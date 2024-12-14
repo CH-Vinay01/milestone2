@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Aamazon</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa; /* Light background color */
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #006d77;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1517832207067-4db24a2ae47c') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin: 10px 0;
+      max-width: 600px;
+    }
+
+    .about-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-size: 2.5em;
+      color: #006d77;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 1.1em;
+      color: #555;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      text-align: justify;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 20px 50px;
+      background-color: #edf6f9;
+    }
+
+    .feature {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature img {
+      max-width: 80px;
+      margin-bottom: 15px;
+    }
+
+    .feature h3 {
+      color: #006d77;
+      font-size: 1.5em;
+    }
+
+    .feature p {
+      font-size: 1em;
+      color: #555;
+      margin: 10px 0 0;
+    }
+
+    .footer {
+      background-color: #006d77;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #ffddc1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#project">About Us</a>
+    <a href="home.html">Home</a>
+    <a href="home.html">Contact</a>
+  </div>
+
+  <div class="hero">
+    <div>
+      <h1>Welcome to Aamazon</h1>
+      <p>Your one-stop destination for everything from fashion to tech, groceries to books. Shop smarter, live better!</p>
+    </div>
+  </div>
+
+  <div class="about-section" id="about">
+    <h2>About Us</h2>
+    <p>
+      Aamazon is more than just a shopping platform. We connect millions of buyers with the products they love, providing top-notch quality and unbeatable deals. 
+      With an extensive range of categories including clothing, electronics, groceries, and more, we aim to make shopping effortless and enjoyable. 
+      Explore the possibilities and find everything you need, all in one place.
+    </p>
+  </div>
+
+  <div class="features" id="features">
+    <div class="feature">
+      <img src="https://imgs.search.brave.com/5j94PRQd1y_tX-FtPFndhcyPxcMxDYAKdN5BBO9OCRU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdy/ZXNpemVycy5jb20v/aW1nL3B1cnBsZS9y/ZXNpemUud2VicA" alt="Fashion">
+      <h3>Latest Fashion</h3>
+      <p>Stay trendy with the newest styles and timeless classics from top brands.</p>
+    </div>
+    <div class="feature">
+      <img src="https://imgs.search.brave.com/Zo3AhuGdkldi9G3BHWSDfuW-dC9m5i4B5V6IuTEQsUU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Z2FkZ2V0c29ubGlu/ZS5jby5uei9jZG4v/c2hvcC9wcm9kdWN0/cy9qYmwtdDc2MC13/aXJlbGVzcy1vbi1l/YXItbm9pc2UtY2Fu/Y2VsbGluZy1oZWFk/cGhvbmVzLWJsYWNr/LTg4NjA4MS5qcGc_/dj0xNjk1NDM4ODk2/JndpZHRoPTgwMA" alt="Tech">
+      <h3>Cutting-edge Technology</h3>
+      <p>Find the latest gadgets, smartphones, and laptops all in one place.</p>
+    </div>
+    <div class="feature">
+      <img src="https://imgs.search.brave.com/SZkVeU_OOt1ESVPXAjD6O3g3ehN-YN6prgig6XqQxjI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9saDMu/Z29vZ2xldXNlcmNv/bnRlbnQuY29tL1Fv/b2d0dWRnYXY1SHk2/R3EzeGhBa0l5MHRI/VDFHaWttZWE5ZkRa/eDc0dXN3YXJSaGFB/V3FJUVJ4QjQyOHlx/R1lPQXFpNkVxU3M1/d1NSR3FMQXcwbEZW/dVo9czk2LXJ3" alt="Groceries">
+      <h3>Premium Groceries</h3>
+      <p>Enjoy fresh and organic groceries delivered straight to your door.</p>
+    </div>
+    <div class="feature">
+      <img src="https://img.icons8.com/dusk/100/000000/open-book.png" alt="Books">
+      <h3>Vast Book Collection</h3>
+      <p>Delve into our diverse range of books for every genre and taste.</p>
+    </div>
+  </div>
+
+  <div class="footer" id="contact">
+    <p>&copy; 2024 Aamazon. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgba(173, 216, 230, 0.3); /* Light blue transparent */
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      margin: 20px 0;
+      color: #006d77;
+      text-align: center;
+    }
+
+    .navbar {
+      width: 100%;
+      background-color: #006d77;
+      color: #333;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.2em;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      width: 90%;
+      max-width: 1200px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #edf6f9;
+      border: 2px solid #006d77;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+      margin: 0 0 15px;
+      color: #006d77;
+    }
+
+    .card img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+
+    .card p {
+      margin: 0;
+      color: #555;
+      text-align: justify; /* Justify the text */
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        padding: 20px;
+      }
+
+      .card h2 {
+        font-size: 1.5em;
+      }
+
+      .card p {
+        font-size: 1em;
+      }
+
+      .navbar a {
+        font-size: 1em;
+      }
+    }
+    .footer {
+        background-color: #006d77;
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+        margin-top: 50px;
+        width: 100%;
+      }
+  
+      .footer h2 {
+        margin-bottom: 20px;
+        font-size: 2em;
+      }
+  
+      .footer p {
+        font-size: 1em;
+      }
+  
+      .footer a {
+        color: #ffddc1;
+        text-decoration: none;
+        font-weight: bold;
+      }
+  
+      .footer a:hover {
+        text-decoration: underline;
+      }
+  
+      /* Scroll behavior for smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#"><span>&#127968;</span> Home</a>
+    <a href="#"><span>&#128196;</span> Your Orders</a>
+    <a href="project.html"><span>&#128214;</span> About Us</a>
+    <a href="#contact"><span>&#128222;</span> Contact Us</a>
+    <a href="#"><span>&#9881;</span> Settings</a>
+  </div>
+
+  <h1>Aamazon</h1>
+  <div class="card-container">
+    <!-- Card Content -->
+    <div class="card">
+        <img src="https://static.vecteezy.com/system/resources/previews/024/455/579/non_2x/us-polo-assn-brand-symbol-with-name-logo-clothes-design-icon-abstract-illustration-free-vector.jpg" alt="Clothing" height="200" width="200">
+        <h2>Clothing</h2>
+        <p>Discover the latest fashion trends designed to elevate your wardrobe. From everyday essentials to seasonal must-haves, our collection has something for everyone!</p>
+      </div>
+      <div class="card">
+        <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-16-pro-max-1.jpg" alt="Mobile & Laptops" height="200" width="200">
+        <h2>Mobile & Laptops</h2>
+        <p>Stay ahead of the curve with cutting-edge technology. Our range of smartphones and laptops delivers the best performance, features, and style all in one place.</p>
+      </div>
+      <div class="card">
+        <img src="https://t3.ftcdn.net/jpg/03/35/61/78/360_F_335617818_D6XfmNhtCyDRTOvK9GXFkNYs3nyLKvfO.jpg" alt="Grocery" height="200" width="200">
+        <h2>Grocery</h2>
+        <p>Shop for fresh, organic, and high-quality groceries delivered right to your doorstep. Make healthy eating easier with our wide selection of premium food items.</p>
+      </div>
+      <div class="card">
+        <img src="https://plus.unsplash.com/premium_photo-1669652639356-f5cb1a086976?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJvb2tzfGVufDB8fDB8fHww" alt="Books" height="200" width="200">
+        <h2>Books</h2>
+        <p>Expand your knowledge and imagination with our vast collection of books across all genres. Whether for learning or leisure, we have something for every reader!</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYeq8gK5mN5bGhjEZectCh5BHAQgXWiX0zvg&s" alt="Mobile Accessories" height="200px" width="200px">
+        <h2>Mobile Accessories</h2>
+        <p>Enhance your mobile experience with top-of-the-line accessories. From sleek cases to powerful chargers, we have everything you need to make your device more stylish and functional.</p>
+      </div>
+      <div class="card">
+        <img src="https://media.istockphoto.com/id/144808221/photo/sports-equipment-with-rackets-and-balls.jpg?s=612x612&w=0&k=20&c=9vTmaRrfPQTST2J8UajQ0RGDarnS82oFWqXwWvKvlb8=" alt="Sports" height="200px" width="200px">
+        <h2>Sports</h2>
+        <p>Get ready for action with our premium sports gear. Whether you're an amateur or a pro, our equipment and apparel will help you perform at your best.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.freepik.com/free-photo/mid-century-modern-living-room-interior-design-with-monstera-tree_53876-129804.jpg" alt="Furniture"height="200px" width="200px">
+        <h2>Furniture</h2>
+        <p>Transform your living space with our range of stylish and functional furniture. Whether you’re redecorating or moving into a new place, we offer timeless designs for every home.</p>
+      </div>
+      <div class="card">
+        <img src="https://c8.alamy.com/comp/HH0MYM/kitchen-and-house-appliances-microwave-refrigerator-gas-stove-dishwasher-HH0MYM.jpg" alt="Kitchen Appliances" height="200px" width="200px">
+        <h2>Kitchen Appliances</h2>
+        <p>Upgrade your cooking experience with our innovative kitchen appliances. From blenders to air fryers, our products make meal preparation faster and easier.</p>
+      </div>
+      <div class="card">
+        <img src="https://media.istockphoto.com/id/1045469854/photo/travel-accessories-flat-lay-with-copy-space.jpg?s=612x612&w=0&k=20&c=ACFWYbHJzNngOn49l3Co8Lo2_8-Dbg149ojG5S_nN3E=" alt="Traveling Accessories" height="200px" width="200px">
+        <h2>Traveling Accessories</h2>
+        <p>Make your trips smoother and more comfortable with our selection of travel accessories. From luggage to travel pillows, we've got everything you need for your next adventure.</p>
+      </div>
+  </div>
+  
+  <div class="footer" id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need further assistance, feel free to reach out to us!</p>
+    <p><strong>Official Website:</strong> <a href="https://Aamazon.com" target="_blank">Aamazon.com</a></p>
+    <p><strong>Email:</strong> support@aamazon.com</p>
+    <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+    <p>&copy; 2024 Aamazon Company. All Rights Reserved.</p>
+  </div>
+
+</body>
+</html>
